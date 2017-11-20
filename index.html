@@ -5,35 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<title>Document</title>
+		<link rel="shortcut icon" href="assets/icons/favicon.ico">
 		<link href="https://fonts.googleapis.com/css?family=Inconsolata|Vollkorn+SC" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <header>
-			<div class="nav">
-				<h1>Twitter</h1>
-			</div>
+			<nav class="nav">
+				<h1 class="align-center">Twitter</h1>
+			</nav>
 		</header>
-		
-    <div class="container" >
+
+		<section>
+		<main class="container">
 		<div id="box-static">
 			<h2>Reto de código</h2>
 			<p>Hola,</p>
-			<p>Soy front-end developer jr.</p><br>
-			<p>CODIGO</p>
+			<p>Soy front-end developer jr.</p><br><br>
+			<p>CODIGO</p><br>
 		</div>
 
-		<form class="box-in">
-				<textarea name="text" id="text" placeholder = "¿En que estas pensando?" cols="30" rows="10"></textarea>
-		<button class="">TWEET</button>
+		<form class="box-texarea">
+				<textarea id="text-tweet" placeholder = "¿En que estas pensando?"autofocus></textarea>
+				<div class="text-input">
+					<input id="btn" type="Enviar" value="TWEET" disable>
+					<span id="count">140</span>
+				</div>
 		</form>
+		</section>
 
-		<div class="box-text"></div>
-
-		<div class="textarea">
-				<textarea id="area"  cols="30" rows="10"></textarea>
-		</div>
-    </div>    
-    <script src="js/app.js"></script>
+		<section>
+		<div id="msg"></div>
+		</section>
+	</main>
+		
+	</div>
+		
+        
+		<script src="js/app.js"></script>
+		<script src="js/vendors/moment.js"></script>
 </body>
 </html>
